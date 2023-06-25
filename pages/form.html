@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Input type</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <form>
+        <header class="headercontainer"><h1>HTML 5 form input Fields</h1></header>
+        <div>
+            <label for="text">Text input type for name </label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password input Type </label>
+            <input type="password" id="pwd" name="pwd" required>
+        </div>
+        <div>
+            <label for="email">Email input Type </label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="url">URL input Type </label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number input Type </label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tele">Telephone input Type </label>
+            <input type="tele" id="tele" name="tele">
+        </div>
+        <div>
+            <label for="search">Search input Type </label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="startDate">Choose a Date and Time </label>
+            <input type="datetime-local" id="startDate" name="startDate">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Choose your Salary </label>
+            <input type="range" id="salary" name="salary" min="30000"
+            max="100000" step="100" value="40000">
+            <output class="salary-output" for="salary">40000</output>
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+    <script defer src="../js/form.js"></script>
+</body>
+</html>
