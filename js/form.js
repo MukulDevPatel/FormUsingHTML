@@ -22,3 +22,12 @@ email.addEventListener('input',function() {
      emailerror.textContent="";
     else emailerror.textContent = "Invalid Email";
 });
+
+const num = document.querySelector("#num");
+const numberError = document.querySelector(".number-error");
+num.addEventListener('input',function() {
+    let numberRegex = RegExp("^[0-9]{2}[ ][6-9]{1}[0-9]{9}$");
+    if (numberRegex.test(num.value))
+     numberError.textContent="";
+    else numberError.textContent = "Invalid Number format";
+});
